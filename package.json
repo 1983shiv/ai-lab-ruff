@@ -1,0 +1,30 @@
+{
+  "name": "ai-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.1154.0",
+    "@aws-sdk/client-dynamodb": "^3.1154.0",
+    "@aws-sdk/client-s3": "^3.1154.0",
+    "@aws-sdk/lib-dynamodb": "^3.1154.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "aws-cdk": "^2.1146.0",
+    "aws-cdk-lib": "^2.274.0",
+    "constructs": "^10.8.1",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

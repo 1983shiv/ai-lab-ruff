@@ -2,9 +2,13 @@ import { BedrockRuntimeClient, InvokeModelCommand, ConverseCommand } from "@aws-
 import type { Message, Tool } from "@aws-sdk/client-bedrock-runtime";
 
 export const DIMS = 512;
-export const env = (globalThis as typeof globalThis & {
-    process?: { env?: Record<string, string | undefined> };
-}).process?.env ?? {};
+
+export const env = process.env
+
+
+// export const env = (globalThis as typeof globalThis & {
+//     process?: { env?: Record<string, string | undefined> };
+// }).process?.env ?? {};
 
 export const MODEL_TAG = env.MODE === 'bedrock' ? 'titan-v2-256' : 'fake-256';
 
